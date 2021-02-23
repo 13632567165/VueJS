@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>post请求</title>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.js"></script>
+
+    <script type="text/javascript">
+        // 文档加载完
+        window.onload = function () {
+            // 创建Vue实例
+            var vue = new Vue({
+                el : '#app', // 指定渲染的html元素
+                data : {  // 数据对象
+
+                },
+                methods : { // 操作方法
+
+                }
+            });
+        };
+    </script>
+
+</head>
+<body>
+    <div id="app">
+        <div style="text-align: center">
+            <span>用户名: <input type="text"/> </span><br/>
+            <span>密码: <input type="password"/></span><br/>
+            <span>姓名: <input type="text"/></span><br/>
+            <span>年龄: <input type="text"/></span><br/>
+            <span>性别: <input type="radio" value="1" checked/>男 
+						<input type="radio" value="2">女</span><br/>
+            <span>生日: <input type="text"/></span><br/>
+            <span>备注: <input type="text"></span><br/>
+            <input type="button" value="添加">
+        </div>
+    </div>
+</body>
+</html>

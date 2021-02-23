@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vuejs子父通信</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- 使用组件 -->
+        <h3>结果: {{num}}</h3>
+        <counter></counter>
+    </div>
+
+    <script type="text/javascript">
+        // 全局注册组件
+        Vue.component('counter', {
+            template: `
+                <div>
+                    <button>+</button>
+                    <button>-</button>
+                </div>
+            `,
+        })
+
+        // 创建Vue实例
+        var vue = new Vue({
+            el : '#app', // 渲染的html元素
+            data : { // 数据对象
+               num: 1
+            }
+
+        });
+    </script>
+</body>
+</html>
